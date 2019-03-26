@@ -14,11 +14,12 @@ robot framework使用心得
 
     4、安装wxPython，根据以上的信息，直接拿到对于版本的wxPython下载地址，如 http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/；下载安装即可。
 
-严格地讲，一套RobotFramework的环境以上步骤算是可以正常运行和使用了，接下去只是要下载最常用的库包进行支持（Selenium2Library是进行web自动化，AutoIt是进行Windows下GUI的自动化）。可以在C:\Python27\Scripts目录下找到ride.py，点击直接运行即可。如果嫌麻烦可以直接右键发送到桌面。
+严格地讲，一套RobotFramework的环境以上步骤算是可以正常运行和使用了，接下去只是要下载最常用的库包进行支持（Selenium2Library是进行web自动化，
+AutoIt是进行Windows下GUI的自动化）。可以在C:\Python27\Scripts目录下找到ride.py，点击直接运行即可。如果嫌麻烦可以直接右键发送到桌面。
 
    参考：https://github.com/robotframework/robotframework/blob/master/INSTALL.rst#installing-with-pip
          https://www.jianshu.com/p/5e76d62856c3
-		 一键安装：https://www.jianshu.com/p/07394f1d8dc2
+         一键安装：https://www.jianshu.com/p/07394f1d8dc2
 
 
 
