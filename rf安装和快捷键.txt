@@ -1,0 +1,94 @@
+robot framework使用心得
+
+一、安装
+说明：网上有很多教程，但是参差不齐。爱基金项目组以Python2.7为基础进行了环境搭建。建议直接使用pip安装命令来进行安装。目前ride安装在win7 64位的电脑上，物理机和虚拟机均安装成功。
+以下为具体的安装步骤。
+
+   1、安装Python2.7，直接去官网下载，默认安装即可。默认情况下，自带pip和setuptools命令。
+
+   2、安装robotframwork，进入cmd命令弹窗，输入 pip install robotframework  回车，安装成功。
+
+   3、安装robotframework-ride，进入cmd命令弹窗，输入 pip install robotframework-ride 回车，安装成功。
+
+    这里有一个说明：robotframework-ride是基于wxPython的，必须先安装wxPython。之所以这么做是因为robotframework-ride对于版本的要求很高，必须一一对应，如果去下载最新版的wxPython，再来装最新版的robotframework-ride，然后运行会提示失败。所以我们先安装robotframework-ride，然后依次在cmd上输入命令Python和from robotide import main。这个时候会有类似于以下的提示：
+
+    4、安装wxPython，根据以上的信息，直接拿到对于版本的wxPython下载地址，如 http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/；下载安装即可。
+
+严格地讲，一套RobotFramework的环境以上步骤算是可以正常运行和使用了，接下去只是要下载最常用的库包进行支持（Selenium2Library是进行web自动化，AutoIt是进行Windows下GUI的自动化）。可以在C:\Python27\Scripts目录下找到ride.py，点击直接运行即可。如果嫌麻烦可以直接右键发送到桌面。
+
+   参考：https://github.com/robotframework/robotframework/blob/master/INSTALL.rst#installing-with-pip
+         https://www.jianshu.com/p/5e76d62856c3
+		 一键安装：https://www.jianshu.com/p/07394f1d8dc2
+
+
+
+三方库引入：
+
+   以为进行web端的移动自动化引入  Selenium2Library 模块为例，可以继续在cmd上 输入pip install robotframework-selenium2library  进行安装拓展库。成功之后直接在ride里面引入该库，进行相关的操作。
+
+  具体ride的操作方法可以参考https://zhuanlan.zhihu.com/p/30092934
+  
+二：快捷键
+
+附：ride内置函数+快捷键：
+robot framework RIDE使用
+*启动
+*创建批处理
+*创建测试项目/测试套件/测试用例
+*运行测试用例
+
+Evaluate：可导入Python库，运用Python方法
+Builtin库：基础关键字。包涵定义变量、数组、时间、分支语句、循环语句、调用Python模块等
+变量：Set variable；数组create list；将2个字符串进行连接：catenate；
+时间获取：get time  休眠：sleep，默认以秒为单位
+
+robot framework提供了用户关键的概念，可以很好地减少测试脚本的冗余
+*创建用户关键字
+*创建资源
+*setUP/treaDown
+自己封装方法并使用
+
+
+重命名——》F2
+
+搜索关键字——》F5
+
+执行用例——》F8
+
+创建新工程——》ctrl+n
+
+创建新测试套——》ctrl+shift+f
+
+创建新用例——》ctrl+shift+t
+
+创建新关键字——》ctrl+shift+k
+
+向上移动用例——》ctrl+↑
+
+向下移动用例——》ctrl+↓
+
+显示关键字信息——》 ctrl+鼠标悬浮（鼠标悬浮于关键字上）
+
+自动补全关键字——》ctrl+shift+空格
+
+删除行——》ctrl+d
+
+删除单元格——》ctrl+shift+d
+
+插入单元格——》ctrl+shift+i
+
+插入行——》ctrl+i
+
+屏蔽代码——》ctrl+#
+
+取消屏蔽——》ctrl+$
+
+保存整个工程——》ctrl+shit+s
+
+局部保存，保存鼠标点击的部分——》ctrl+s
+
+查看log——》ctrl+L
+
+查看report——》ctrl+r
+
+注意：如果快捷键不能使用，先看看是否有其他软件已占用相应的快捷键
