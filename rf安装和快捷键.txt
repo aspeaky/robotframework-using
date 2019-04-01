@@ -21,6 +21,11 @@ AutoIt是进行Windows下GUI的自动化）。可以在C:\Python27\Scripts目录
          https://www.jianshu.com/p/5e76d62856c3
          一键安装：https://www.jianshu.com/p/07394f1d8dc2
 
+**************************************************************************************************************************************
+那么使用Python3怎么办呢？Python3可以不用ride编辑器，使用第三方编辑器。这里我推荐sublime3.网上说的需要安装Robot Framework Assistant
+详见 https://www.jianshu.com/p/07ae62d2c63f
+但是好像是由于外网的原因，往往不能够顺利的利用Package Control 来安装Robot Framework Assistant。这里推荐直接将包下载下来：https://github.com/andriyko/sublime-robot-framework-assistant，解压后放到sublime的package即可，可以点击Preferences-->Browser Packages直接打开。
+
 
 
 三方库引入：
