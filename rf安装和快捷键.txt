@@ -26,6 +26,13 @@ AutoIt是进行Windows下GUI的自动化）。可以在C:\Python27\Scripts目录
 详见 https://www.jianshu.com/p/07ae62d2c63f
 但是好像是由于外网的原因，往往不能够顺利的利用Package Control 来安装Robot Framework Assistant。这里推荐直接将包下载下来：https://github.com/andriyko/sublime-robot-framework-assistant，解压后放到sublime的package即可，可以点击Preferences-->Browser Packages直接打开。
 
+**************************************************************************************************************************************
+在ride中指定报告输出的文件位置，并用时间命名：-T -o output.xml -r report.html -l log.html -d E:\自动化\行情自动化\报告
+详解，例：-l D:\test\log\log -r D:\test\report\report
+         -l 是log 的地址    -r 是report 的地址
+         D:\test\log\log    
+         D:\test\log 是log存放的文件    log 是log文件的名称
+         参考：https://blog.csdn.net/qq_36350532/article/details/80338448
 
 
 三方库引入：
