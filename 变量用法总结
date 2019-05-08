@@ -1,0 +1,16 @@
+1、scalar变量是一种单值变量，List变量是一种多值变量。两者可以相互转换。区别：取第一个值。@{List_A}[0]和${List_A[0]}
+
+列表
+sort list：列表排序 
+reverse list：反转一个列表 
+append to list：添加一个值到列表末尾 
+insert to list：在某个索引出入某个值 
+remove from list：删除列表某个值 
+set list value：修改列表某个值
+字典
+create dictionary：创建字典 
+get dictionary keys：获取字典的所有键，返回列表 
+get dictionary values：获取字典的所有值，返回列表 
+get from dictionary：获取字典某个对应的值
+remove from dictionary：通过key删除字典某个对应的值
+set to dictionary：如果有则替换；如果没有则增加该值
