@@ -14,3 +14,14 @@ get dictionary values：获取字典的所有值，返回列表
 get from dictionary：获取字典某个对应的值
 remove from dictionary：通过key删除字典某个对应的值
 set to dictionary：如果有则替换；如果没有则增加该值
+
+
+字典遍历
+1、字典自动转换成key的@列表
+：For ${key} IN @{dict} #字典转换成列表，实际上就是key组成的列表
+      log &{dict}[${key}] #或者写成${dict[${key}]}
+      
+2、使用关键字Get Dictionary Keys（Collections库）
+@{keys} Get Dictionary Keys ${dict}
+：For ${iter} IN @{keys}
+  log &{dict}[${key}] #或者写成${dict[${key}]}    
